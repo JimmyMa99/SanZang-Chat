@@ -1,5 +1,7 @@
 # SanZang-Chat
+
 ### 项目简介
+
 三藏-Chat是利用《西游记》中所有关于唐三藏的语句，以及Chat-GPT-3.5生成的相关问题结果，基于Internlm进行QLoRA微调得到的模仿唐三藏语气的聊天语言模型。
 
 🎲[在 OpenXLab 上尝试](https://openxlab.org.cn/apps/detail/JimmyMa99/SanZang-Chat)
@@ -14,7 +16,7 @@
 ### 最佳实践
 
 <details>
-  <summary style="font-weight: bold; font-size: larger;">⚙️部署BaJie-Chat到Linux环境中</summary>
+  <summary style="font-weight: bold; font-size: larger;">⚙️部署SanZang-Chat到Linux环境中</summary>
 
 ```bash
 # git clone 本 repo 以及其submodules
@@ -43,6 +45,7 @@ xtuner convert merge {your model path} process_data/hf_models/zbj process_data/m
 ```
 
 - 使用 streamlit 进行对话：修改 `web_demo.py` 中的模型路径
+
 ```diff
 -     model = (AutoModelForCausalLM.from_pretrained('path/to/your/model',
 -                                                 trust_remote_code=True).to(
@@ -61,6 +64,7 @@ pip install streamlit
 pip install transformers>=4.34
 streamlit run ./web_demo.py
 ```
+
 </details>
 
 ### 效果展示
@@ -95,8 +99,8 @@ streamlit run ./web_demo.py
 
 ### Todo
 
-- [x] qlora微调唐三藏
-- [x] 增添文言文和白话文数据，优化原著对话数据
+- [X] qlora微调唐三藏
+- [X] 增添文言文和白话文数据，优化原著对话数据
 - [ ] 全量微调唐三藏
 - [ ] 接入lmdeploy实现openai api
 
