@@ -71,7 +71,7 @@ streamlit run ./web_demo.py
 
 #### 预览
 
-![三藏-Chat 截图](./asserts/chat-demo.png)
+![三藏-Chat 截图](./assets/chat-demo.png)
 
 #### OpenXLab 链接
 
@@ -118,7 +118,11 @@ streamlit run ./web_demo.py
 
 更多拓展
 
-[SanZang-Chat](https://github.com/JimmyMa99/SanZang-Chat)
+[悟空-Chat](https://github.com/JimmyMa99/WuKong-Chat)
+
+[八戒-Chat](https://github.com/JimmyMa99/BaJie-Chat)
+
+[悟净-Chat](https://github.com/JimmyMa99/WuJing-Chat)
 
 [XTuner](https://github.com/InternLM/xtuner)
 
